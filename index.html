@@ -2,92 +2,104 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lais Borges</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lais Borges - Privacidade</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #e5ddd5;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
+      margin: 0;
     }
-
     .container {
-      background: #fff;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
       padding: 20px;
-      border-radius: 10px;
+      max-width: 400px;
       width: 90%;
-      max-width: 360px;
       text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      position: relative;
     }
-
-    .profile-img {
-      width: 110px;
-      height: 110px;
+    .profile {
+      position: relative;
+      display: inline-block;
+    }
+    .profile img {
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
-      border: 3px solid #25D366;
       object-fit: cover;
+      border: 3px solid #25D366;
     }
-
+    .online-indicator {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      width: 20px;
+      height: 20px;
+      background-color: #25D366;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+    }
     h2 {
-      margin-top: 15px;
-      margin-bottom: 5px;
-      font-size: 22px;
-      color: #333;
+      margin: 15px 0 5px 0;
+      color: #075E54;
     }
-
     p {
       margin: 5px 0;
-      font-size: 14px;
-      color: #666;
+      color: #555;
+      font-size: 15px;
     }
-
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 12px;
-      border: none;
-      border-radius: 25px;
-      font-size: 16px;
-      margin-top: 12px;
-      text-decoration: none;
-      color: #fff;
-      transition: background-color 0.3s;
-    }
-
-    .btn-whatsapp {
-      background-color: #25D366;
-    }
-
     .btn-privacy {
+      display: inline-block;
       background-color: #FF6600;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      width: 100%;
+      max-width: 300px;
     }
-
-    .btn:hover {
-      opacity: 0.9;
+    .btn-privacy:hover {
+      background-color: #e65c00;
+    }
+    @media (max-width: 480px) {
+      .profile img {
+        width: 100px;
+        height: 100px;
+      }
+      .online-indicator {
+        width: 16px;
+        height: 16px;
+        bottom: 3px;
+        right: 3px;
+      }
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <img src="https://i.postimg.cc/L6fd6QdH/Imagem-do-Whats-App-de-2025-06-11-s-01-41-37-c17cb9b5.jpg" alt="Lais Borges" class="profile-img">
+    <div class="profile">
+      <img src="https://i.postimg.cc/L6fd6QdH/Imagem-do-Whats-App-de-2025-06-11-s-01-41-37-c17cb9b5.jpg" alt="Lais Borges">
+      <div class="online-indicator"></div>
+    </div>
+
     <h2>Lais Borges</h2>
     <p>21 anos</p>
     <p>Bahia / Rio de Janeiro</p>
 
-    <!-- Botão WhatsApp -->
-    <a class="btn btn-whatsapp" href="https://wa.me/557391288391?text=Oi%20Lais,%20tenho%20interesse!" target="_blank">
-      Falar no WhatsApp
-    </a>
-
-    <!-- Botão Política de Privacidade -->
-    <a class="btn btn-privacy" href="privacy.html" target="_blank">
+    <!-- Botão redirecionando para a política de privacidade -->
+    <a class="btn-privacy" href="https://l.instagram.com/?u=https%3A%2F%2Fprivacycaarol.netlify.app%2F&e=AT09Gqow7reBtXGoUpadDX0lFj9dt7MURuVbtamIAPDndxcTHWVXiqRK4WelIQt4UFWSYdtTA0cvINYaYWb6wIf27wA8X9ymPFk6aVkEZ03JGlqU1IIhpYtxjYC4U2Zz_H_1JvQgcCxt" target="_blank">
       Política de Privacidade
     </a>
   </div>
