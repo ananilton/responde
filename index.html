@@ -6,58 +6,70 @@
   <title>Lais Borges</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f1f1f1;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
       display: flex;
-      justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      justify-content: center;
+      height: 100vh;
     }
+
     .container {
       background: #fff;
-      border-radius: 10px;
       padding: 20px;
-      width: 100%;
+      border-radius: 10px;
+      width: 90%;
       max-width: 360px;
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
     .profile-img {
-      width: 100px;
-      height: 100px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
       border: 3px solid #25D366;
       object-fit: cover;
     }
+
     h2 {
+      margin-top: 15px;
+      margin-bottom: 5px;
       font-size: 22px;
-      margin: 10px 0 5px;
       color: #333;
     }
+
     p {
+      margin: 5px 0;
       font-size: 14px;
       color: #666;
-      margin: 4px 0;
     }
+
     .btn {
       display: block;
       width: 100%;
       padding: 12px;
-      margin-top: 12px;
-      font-size: 16px;
       border: none;
       border-radius: 25px;
-      cursor: pointer;
+      font-size: 16px;
+      margin-top: 12px;
       text-decoration: none;
       color: #fff;
+      transition: background-color 0.3s;
     }
+
     .btn-whatsapp {
       background-color: #25D366;
     }
+
     .btn-privacy {
       background-color: #FF6600;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
     }
   </style>
 </head>
@@ -69,8 +81,15 @@
     <p>21 anos</p>
     <p>Bahia / Rio de Janeiro</p>
 
-    <a class="btn btn-whatsapp" href="https://wa.me/557391288391?text=Oi%20Lais,%20tenho%20interesse!" target="_blank">Falar no WhatsApp</a>
-    <a class="btn btn-privacy" href="privacy.html" target="_blank">Política de Privacidade</a>
+    <!-- Botão WhatsApp -->
+    <a class="btn btn-whatsapp" href="https://wa.me/557391288391?text=Oi%20Lais,%20tenho%20interesse!" target="_blank">
+      Falar no WhatsApp
+    </a>
+
+    <!-- Botão Política de Privacidade -->
+    <a class="btn btn-privacy" href="privacy.html" target="_blank">
+      Política de Privacidade
+    </a>
   </div>
 
 </body>
